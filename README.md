@@ -1,6 +1,9 @@
 # Property Tax Data Pipeline
+Python workflow for property tax data transformations
 
-Remove `NULL` bytes from the mainframe-generated file and run this script using:
+Note: This is a work in progress to replace the current FME-based workflow.
+
+Pipe the contents of the input file to `main.py` and pipe the output to a new file.
 ```bash
-cat OPEN_DATA_FILE.txt | tr -d '\0' | python main.py
+cat input/sample.txt | python main.py > output/sample.csv
 ```
