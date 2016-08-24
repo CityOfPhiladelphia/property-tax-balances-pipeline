@@ -2,3 +2,4 @@ input/*
 !input/sample.txt
 output/*
 !output/sample.csv
+/venv

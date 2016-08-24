@@ -1,0 +1,5 @@
+#!/home/nwebz/Documents/work/property-tax-data-pipeline/venv/bin/python
+
+from phl_property import street_codes
+
+street_codes.main()
