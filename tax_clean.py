@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import sys
 import csv
 from decimal import Decimal
@@ -86,7 +88,7 @@ for key, values in grouped_dict.iteritems():
   # Put grouped_dict key into each dict and convert it to list of dicts
   key_as_items = dict(zip(['parcel_number', 'tax_period'], key))
   values.update(key_as_items)
-  
+
   # Add record_id column consisting of parcel_number and tax_period
   values['record_id'] = ''.join(key)
 
